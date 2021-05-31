@@ -87,7 +87,7 @@ public class CandidatoServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 	
-	private void insertarUsuario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+	private void insertarCandidato(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 		String documento = request.getParameter("documento");
 		String nombre = request.getParameter("nombre");
 		String apellido = request.getParameter("apellido");
@@ -98,7 +98,7 @@ public class CandidatoServlet extends HttpServlet {
 		response.sendRedirect("list");
 	}
 	
-	private void actualizarUsuario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+	private void actualizarCandidato(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String documento = request.getParameter("documento");
 		String nombre = request.getParameter("nombre");
@@ -110,7 +110,7 @@ public class CandidatoServlet extends HttpServlet {
 		response.sendRedirect("list");
 	}
 	
-	private void eliminarUsuario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+	private void eliminarCandidato(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		candidatoDao.delete(id);	
 		response.sendRedirect("list");
