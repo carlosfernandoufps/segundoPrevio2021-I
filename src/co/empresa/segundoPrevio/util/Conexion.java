@@ -17,7 +17,7 @@ public class Conexion {
 	private static final String dbname = "mnjgxshj";
 	private static final String driver = "org.postgresql.Driver";
 	private static final String username = "mnjgxshj";
-	private static final String password = "mnjgxshj";
+	private static final String password = "Uzjqo00sxV0W9OzPEB1q3wpoVvGMbbUV";
 	
 	public Conexion(){
 		try{
