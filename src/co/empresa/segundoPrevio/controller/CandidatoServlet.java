@@ -127,7 +127,7 @@ public class CandidatoServlet extends HttpServlet {
 	private void listCandidatos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 		List<Candidato> listCandidatos = candidatoDao.selectAll();
 		request.setAttribute("listCandidatos", listCandidatos);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("candidatoList.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("listCandidatos.jsp");
 		dispatcher.forward(request, response);
 	}
 

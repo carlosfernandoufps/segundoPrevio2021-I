@@ -13,10 +13,9 @@ public class Conexion {
 	private static Conexion db;
 	private PreparedStatement preparedStatement;
 	
-	//puerto 5432
-	private static final String url = "postgres://mnjgxshj:Uzjqo00sxV0W9OzPEB1q3wpoVvGMbbUV@queenie.db.elephantsql.com/mnjgxshj";
+	private static final String url = "jdbc:postgresql://mnjgxshj:Uzjqo00sxV0W9OzPEB1q3wpoVvGMbbUV@queenie.db.elephantsql.com/mnjgxshj:5342/";
 	private static final String dbname = "mnjgxshj";
-	private static final String driver = "com.mysql.jdbc.Driver";
+	private static final String driver = "org.postgresql.Driver";
 	private static final String username = "mnjgxshj";
 	private static final String password = "mnjgxshj";
 	
